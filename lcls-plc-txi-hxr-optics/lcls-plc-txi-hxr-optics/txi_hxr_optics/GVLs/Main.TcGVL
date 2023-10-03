@@ -19,7 +19,6 @@ VAR_GLOBAL
         pv: MR1L1:HOMS:MMS:YDWN
     '}
     M2 : DUT_MotionStage := (sName:='MR1L1:HOMS:YUP', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
-    fbMotionStage_m2 : FB_MotionStage;
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7047_M1L1_Xup]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7047_M1L1_Xup]^STM Status^Status^Digital input 2;
@@ -28,7 +27,7 @@ VAR_GLOBAL
         pv: MR1L1:HOMS:MMS:XUP
     '}
     M3 : DUT_MotionStage := (sName:='MR1L1:HOMS:YDWN', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
-    fbMotionStage_m3 : FB_MotionStage;
+
 
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7047_M1L1_Xdwn]^STM Status^Status^Digital input 1;
@@ -38,7 +37,7 @@ VAR_GLOBAL
         pv: MR1L1:HOMS:MMS:DWN
     '}
     M4 : DUT_MotionStage := (sName:='MR1L1:HOMS:XUP', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
-    fbMotionStage_m4 : FB_MotionStage;
+
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7047_M1L1_PitchCoarse]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7047_M1L1_PitchCoarse]^STM Status^Status^Digital input 2;
@@ -47,7 +46,7 @@ VAR_GLOBAL
         pv: MR1L1:HOMS:MMS:PITCH
     '}
     M5 : DUT_MotionStage := (sName:='MR1L1:HOMS:PITCH', fVelocity:=150.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
-    fbMotionStage_m5 : FB_MotionStage;
+
 
 
 
