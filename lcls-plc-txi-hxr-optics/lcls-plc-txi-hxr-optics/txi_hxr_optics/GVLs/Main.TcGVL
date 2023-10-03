@@ -9,7 +9,7 @@ VAR_GLOBAL
     {attribute 'pytmc' := '
         pv: MR1L1:HOMS:MMS:YUP
     '}
-    M1 : DUT_MotionStage := (sName:='MR1L1:HOMS:YUP', fVelocity:=150.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+    M1 : DUT_MotionStage := (sName:='MR1L1:HOMS:YUP', fVelocity:=100.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
 
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[MR1L1-EL7047-E02]^STM Status^Status^Digital input 1;
@@ -18,7 +18,7 @@ VAR_GLOBAL
     {attribute 'pytmc' := '
         pv: MR1L1:HOMS:MMS:YDWN
     '}
-    M2 : DUT_MotionStage := (sName:='MR1L1:HOMS:YDWN', fVelocity:=150.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+    M2 : DUT_MotionStage := (sName:='MR1L1:HOMS:YDWN', fVelocity:=100.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[MR1L1-EL7047-E03]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[MR1L1-EL7047-E03]^STM Status^Status^Digital input 2;

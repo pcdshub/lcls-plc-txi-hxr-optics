@@ -1342,8 +1342,9 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo SlowManual="60" FastManual="90" Maximum="200"/>
+				<Velo SlowManual="60" FastManual="90" Maximum="110"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>39</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
@@ -1550,8 +1551,9 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo SlowManual="60" FastManual="90" Maximum="200"/>
+				<Velo SlowManual="60" FastManual="90" Maximum="110"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>39</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
@@ -1760,8 +1762,9 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo FastManual="150" Maximum="300"/>
+				<Velo FastManual="150" Maximum="150"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>39</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff">
@@ -1969,8 +1972,9 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo FastManual="150" Maximum="300"/>
+				<Velo FastManual="150" Maximum="150"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>39</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff">
