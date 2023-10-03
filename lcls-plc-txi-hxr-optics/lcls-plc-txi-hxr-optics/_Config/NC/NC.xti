@@ -1338,7 +1338,7 @@ External Setpoint Generation:
 			<Name>NC-Task 1 SVB</Name>
 		</SvbTask>
 		<Axis CreateSymbols="true" AxisType="1" Id="1">
-			<Name>Axis_Yup</Name>
+			<Name>Axis 1 MR1L1-HOMS-YUP</Name>
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
@@ -1346,7 +1346,7 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1546,7 +1546,7 @@ External Setpoint Generation:
 			</Vars>
 		</Axis>
 		<Axis CreateSymbols="true" AxisType="1" Id="2">
-			<Name>Axis_Ydwn</Name>
+			<Name>Axis 2 MR1L1-HOMS-YDWN</Name>
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
@@ -1554,7 +1554,7 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1756,7 +1756,7 @@ External Setpoint Generation:
 			</Vars>
 		</Axis>
 		<Axis CreateSymbols="true" AxisType="1" Id="3">
-			<Name>Axis_Xup</Name>
+			<Name>Axis 3 MR1L1-HOMS-XUP</Name>
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
@@ -1764,7 +1764,7 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1965,7 +1965,7 @@ External Setpoint Generation:
 			</Vars>
 		</Axis>
 		<Axis CreateSymbols="true" AxisType="1" Id="4">
-			<Name>Axis_Xdwn</Name>
+			<Name>Axis 4 MR1L1-HOMS-XDWN</Name>
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
@@ -1973,7 +1973,7 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -2174,7 +2174,7 @@ External Setpoint Generation:
 			</Vars>
 		</Axis>
 		<Axis CreateSymbols="true" AxisType="1" Id="5">
-			<Name>Axis_PitchCoarse</Name>
+			<Name>Axis 5 MR1L1-HOMS-PITCH</Name>
 			<AxisPara>
 				<General UnitName="urad"/>
 				<Dynamic AccelerationMaximum="7042" Acceleration="64082" Deceleration="64082" Jerk="711156" DelayTime="0.008" VeloJumpFactor="2000"/>
@@ -2184,7 +2184,7 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true" AllowMotionCmdToExtSetGenAxis="true" PulseDistancePos="100"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.00556" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="0.00556" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -2386,4 +2386,176 @@ External Setpoint Generation:
 			</Vars>
 		</Axis>
 	</NC>
+	<Mappings>
+		<OwnerA Name="Axes^Axis 1 MR1L1-HOMS-YUP">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06">
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
+				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="FB Inputs Channel 1^Position"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Diag" Size="1" OffsA="12"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Error" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Input cycle counter" Size="2" OffsA="14"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Ready" Size="1" OffsA="2"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^TxPDO State" Size="1" OffsA="13"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Warning"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01">
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Motor stall" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving positive" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready to enable"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Torque reduced" Size="1" OffsA="6"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Warning" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 2" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Sync error" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^TxPDO Toggle" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Enable"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reduce torque" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reset" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl2" VarB="STM Control^Control^Digital output 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="Axes^Axis 2 MR1L1-HOMS-YDWN">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06">
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
+				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="FB Inputs Channel 2^Position"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Diag" Size="1" OffsA="12"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Error" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Input cycle counter" Size="2" OffsA="14"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Ready" Size="1" OffsA="2"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^TxPDO State" Size="1" OffsA="13"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Warning"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02">
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Motor stall" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving positive" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready to enable"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Torque reduced" Size="1" OffsA="6"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Warning" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 2" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Sync error" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^TxPDO Toggle" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Enable"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reduce torque" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reset" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl2" VarB="STM Control^Control^Digital output 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="Axes^Axis 3 MR1L1-HOMS-XUP">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07">
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
+				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="FB Inputs Channel 1^Position"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Diag" Size="1" OffsA="12"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Error" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Input cycle counter" Size="2" OffsA="14"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Ready" Size="1" OffsA="2"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^TxPDO State" Size="1" OffsA="13"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Warning"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03">
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Motor stall" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving positive" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready to enable"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Torque reduced" Size="1" OffsA="6"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Warning" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 2" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Sync error" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^TxPDO Toggle" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Enable"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reduce torque" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reset" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl2" VarB="STM Control^Control^Digital output 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="Axes^Axis 4 MR1L1-HOMS-XDWN">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07">
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
+				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="FB Inputs Channel 2^Position"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Diag" Size="1" OffsA="12"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Error" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Input cycle counter" Size="2" OffsA="14"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Ready" Size="1" OffsA="2"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^TxPDO State" Size="1" OffsA="13"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 2^Status^Warning"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04">
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Motor stall" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving positive" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready to enable"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Torque reduced" Size="1" OffsA="6"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Warning" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 2" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Sync error" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^TxPDO Toggle" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Enable"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reduce torque" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reset" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl2" VarB="STM Control^Control^Digital output 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="Axes^Axis 5 MR1L1-HOMS-PITCH">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08">
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
+				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="FB Inputs Channel 1^Position"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Diag" Size="1" OffsA="12"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Error" Size="1" OffsA="1"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Input cycle counter" Size="2" OffsA="14"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Ready" Size="1" OffsA="2"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^TxPDO State" Size="1" OffsA="13"/>
+				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Warning"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05">
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Motor stall" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving positive" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready to enable"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Torque reduced" Size="1" OffsA="6"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Warning" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Digital input 2" Size="1" OffsA="4"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Sync error" Size="1" OffsA="5"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^TxPDO Toggle" Size="1" OffsA="7"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Enable"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reduce torque" Size="1" OffsA="2"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reset" Size="1" OffsA="1"/>
+				<Link VarA="Drive^Outputs^Out^nCtrl2" VarB="STM Control^Control^Digital output 1" Size="1" OffsA="3"/>
+				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
 </TcSmItem>

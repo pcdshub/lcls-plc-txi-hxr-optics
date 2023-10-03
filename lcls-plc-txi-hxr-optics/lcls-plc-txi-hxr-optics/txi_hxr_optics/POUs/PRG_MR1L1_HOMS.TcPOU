@@ -5,12 +5,12 @@
 VAR
     fbMotionStage_m1, fbMotionStage_m2, fbMotionStage_m3, fbMotionStage_m4, fbMotionStage_m5 : FB_MotionStage;
 
-    {attribute 'TcLinkTo' := '.fbRunHOMS.bSTOEnable1:=TIIB[EL1004_M1L1_STO]^Channel 1^Input;
-                              .fbRunHOMS.bSTOEnable2:=TIIB[EL1004_M1L1_STO]^Channel 2^Input;
-                              .fbRunHOMS.stYupEnc.Count:=TIIB[EL5042_M1L1_Yupdwn]^FB Inputs Channel 1^Position;
-                              .fbRunHOMS.stYdwnEnc.Count:=TIIB[EL5042_M1L1_Yupdwn]^FB Inputs Channel 2^Position;
-                              .fbRunHOMS.stXupEnc.Count:=TIIB[EL5042_M1L1_Xupdwn]^FB Inputs Channel 1^Position;
-                              .fbRunHOMS.stXdwnEnc.Count:=TIIB[EL5042_M1L1_Xupdwn]^FB Inputs Channel 2^Position'}
+    {attribute 'TcLinkTo' := '.fbRunHOMS.bSTOEnable1:=TIIB[MR1L1-EL1004-E13]^Channel 1^Input;
+                              .fbRunHOMS.bSTOEnable2:=TIIB[MR1L1-EL1004-E13]^Channel 2^Input;
+                              .fbRunHOMS.stYupEnc.Count:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Position;
+                              .fbRunHOMS.stYdwnEnc.Count:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 2^Position;
+                              .fbRunHOMS.stXupEnc.Count:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 1^Position;
+                              .fbRunHOMS.stXdwnEnc.Count:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 2^Position'}
     {attribute 'pytmc' := '
         pv: MR1L1:HOMS
     '}
