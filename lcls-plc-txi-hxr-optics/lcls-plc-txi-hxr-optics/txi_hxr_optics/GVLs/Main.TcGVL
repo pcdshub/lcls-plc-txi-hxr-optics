@@ -47,11 +47,6 @@ VAR_GLOBAL
     '}
     M5 : DUT_MotionStage := (sName:='MR1L1:HOMS:PITCH', fVelocity:=150.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
 
-
-
-
-
-
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

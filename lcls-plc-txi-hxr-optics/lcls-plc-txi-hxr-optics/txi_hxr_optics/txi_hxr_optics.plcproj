@@ -25,6 +25,9 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\PRG_1_PlcTask.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\PRG_MR1L1_HOMS.TcPOU">
       <SubType>Code</SubType>
     </Compile>

@@ -7,7 +7,12 @@ VAR
 
     stoEnable1 AT %I* : BOOL;
     stoEnable2 AT %I* : BOOL;
-
+    {attribute 'TcLinkTo' := '.fbRunHOMS.bSTOEnable1:=TIIB[EL1004_M1L1_STO]^Channel 1^Input;
+                              .fbRunHOMS.bSTOEnable2:=TIIB[EL1004_M1L1_STO]^Channel 2^Input;
+                              .fbRunHOMS.stYupEnc.Count:=TIIB[EL5042_M1L1_Yupdwn]^FB Inputs Channel 1^Position;
+                              .fbRunHOMS.stYdwnEnc.Count:=TIIB[EL5042_M1L1_Yupdwn]^FB Inputs Channel 2^Position;
+                              .fbRunHOMS.stXupEnc.Count:=TIIB[EL5042_M1L1_Xupdwn]^FB Inputs Channel 1^Position;
+                              .fbRunHOMS.stXdwnEnc.Count:=TIIB[EL5042_M1L1_Xupdwn]^FB Inputs Channel 2^Position'}
     {attribute 'pytmc' := '
         pv: MR1L1:HOMS
     '}
