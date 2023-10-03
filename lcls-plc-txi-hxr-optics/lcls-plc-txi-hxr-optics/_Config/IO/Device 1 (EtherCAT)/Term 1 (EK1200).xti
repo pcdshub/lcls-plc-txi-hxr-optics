@@ -19,8 +19,5 @@
 		<Box File="PLC Junction 1 (EK1122).xti" Id="5">
 			<EtherCAT PortABoxInfo="#x01000004"/>
 		</Box>
-		<Box File="Term 6 (EL9011).xti" Id="6">
-			<EtherCAT PortABoxInfo="#x02000005"/>
-		</Box>
 	</Box>
 </TcSmItem>
