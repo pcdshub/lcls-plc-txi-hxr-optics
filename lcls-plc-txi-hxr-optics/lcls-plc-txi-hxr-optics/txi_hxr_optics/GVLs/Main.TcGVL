@@ -9,7 +9,7 @@ VAR_GLOBAL
     {attribute 'pytmc' := '
         pv: MR1L1:HOMS:MMS:YUP
     '}
-    M1 : DUT_MotionStage := (sName:='MR1L1:HOMS:MMS', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+    M1 : DUT_MotionStage := (sName:='MR1L1:HOMS:YUP', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
 
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7047_M1L1_Ydwn]^STM Status^Status^Digital input 1;
@@ -18,7 +18,7 @@ VAR_GLOBAL
     {attribute 'pytmc' := '
         pv: MR1L1:HOMS:MMS:YDWN
     '}
-    M2 : DUT_MotionStage := (sName:='MR1L1:HOMS:YUP', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+    M2 : DUT_MotionStage := (sName:='MR1L1:HOMS:YDWN', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7047_M1L1_Xup]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7047_M1L1_Xup]^STM Status^Status^Digital input 2;
@@ -26,7 +26,7 @@ VAR_GLOBAL
     {attribute 'pytmc' := '
         pv: MR1L1:HOMS:MMS:XUP
     '}
-    M3 : DUT_MotionStage := (sName:='MR1L1:HOMS:YDWN', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+    M3 : DUT_MotionStage := (sName:='MR1L1:HOMS:XUP', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
 
 
 
@@ -34,9 +34,9 @@ VAR_GLOBAL
                               .bLimitBackwardEnable:=TIIB[EL7047_M1L1_Xdwn]^STM Status^Status^Digital input 2;
                               .nRawEncoderULINT:=TIIB[EL5042_M1L1_Xupdwn]^FB Inputs Channel 2^Position'}
     {attribute 'pytmc' := '
-        pv: MR1L1:HOMS:MMS:DWN
+        pv: MR1L1:HOMS:MMS:XDWN
     '}
-    M4 : DUT_MotionStage := (sName:='MR1L1:HOMS:XUP', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+    M4 : DUT_MotionStage := (sName:='MR1L1:HOMS:XDWN', fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
 
 
     {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7047_M1L1_PitchCoarse]^STM Status^Status^Digital input 1;
