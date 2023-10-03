@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_MR1L1_Constants" Id="{3815ab01-8675-4c83-abc4-6458bc5ea93b}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+    nYUP_ENC_REF : ULINT := 108558460;
+    nYDWN_ENC_REF : ULINT := 108761210;
+    nXUP_ENC_REF : ULINT := 20664670;
+    nXDWN_ENC_REF : ULINT := 20133000;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
