@@ -47,6 +47,10 @@
       <DefaultResolution>lcls-twincat-optics, * (SLAC)</DefaultResolution>
       <Namespace>lcls_twincat_optics</Namespace>
     </PlaceholderReference>
+    <PlaceholderReference Include="lcls-twincat-rail">
+      <DefaultResolution>lcls-twincat-rail, * (SLAC)</DefaultResolution>
+      <Namespace>lcls_twincat_rail</Namespace>
+    </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_Standard</Namespace>
@@ -66,6 +70,9 @@
     </PlaceholderResolution>
     <PlaceholderResolution Include="lcls-twincat-optics">
       <Resolution>lcls-twincat-optics, 0.6.1 (SLAC)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="lcls-twincat-rail">
+      <Resolution>lcls-twincat-rail, * (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc2_Standard">
       <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>

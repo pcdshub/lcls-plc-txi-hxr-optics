@@ -15,6 +15,8 @@ VAR
         pv: MR1L1:HOMS
     '}
     MR1L1 : DUT_HOMS;
+
+
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -44,7 +46,8 @@ fbMotionStage_m1(stMotionStage:=Main.M1);
 fbMotionStage_m2(stMotionStage:=Main.M2);
 fbMotionStage_m3(stMotionStage:=Main.M3);
 fbMotionStage_m4(stMotionStage:=Main.M4);
-fbMotionStage_m5(stMotionStage:=Main.M5);]]></ST>
+fbMotionStage_m5(stMotionStage:=Main.M5);
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
