@@ -15,6 +15,14 @@ VAR
         pv: MR1L1:HOMS
     '}
     MR1L1 : DUT_HOMS;
+    // MR1L1 Y Encoder for PMPS Veto Device
+    ///////////////////////////////////////
+        {attribute 'TcLinkTo' := 'TIIB[PMPS_PRE]^IO Outputs^MR1K1_Y_ENC'}
+        nMR1K1_Y_ENC_PMPS AT %Q* : UDINT;
+        {attribute 'TcLinkTo' := 'TIIB[EL5042_M1K1_Yupdwn]^FB Inputs Channel 1^Status^Ready'}
+        bMR1K1_Y_ENC_Ready AT %I* : BOOL;
+        {attribute 'TcLinkTo' := 'TIIB[EL5042_M1K1_Yupdwn]^FB Inputs Channel 1^Status^TxPDO State'}
+        bMR1K1_Y_ENC_TxPDO AT %I* : BOOL;
 
 
 END_VAR

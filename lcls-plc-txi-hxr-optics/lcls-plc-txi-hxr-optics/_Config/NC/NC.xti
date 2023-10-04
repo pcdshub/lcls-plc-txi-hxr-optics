@@ -1342,8 +1342,9 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo SlowManual="60" FastManual="90" Maximum="110"/>
+				<Velo SlowManual="60" FastManual="90" Maximum="500"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>39</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
@@ -1551,8 +1552,9 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo SlowManual="60" FastManual="90" Maximum="110"/>
+				<Velo SlowManual="60" FastManual="90" Maximum="500"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>39</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
@@ -2179,13 +2181,10 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="urad"/>
 				<Dynamic AccelerationMaximum="7042" Acceleration="7000" Deceleration="14000" DelayTime="0.008" VeloJumpFactor="2000"/>
-				<Velo SlowManual="30" FastManual="50" Maximum="100"/>
+				<Velo SlowManual="30" FastManual="50" Maximum="400"/>
 				<MotionControl Time="0.1"/>
 				<TargetPosControl Time="2"/>
 				<OtherSettings AllowMotionCmdToSlave="true" AllowMotionCmdToExtSetGenAxis="true" PulseDistancePos="100"/>
-				<ParameterChanged>257</ParameterChanged>
-				<ParameterChanged>259</ParameterChanged>
-				<ParameterChanged>258</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="0.00556" MaxCount="#xffffffff">
@@ -2232,7 +2231,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara Inverse="true">
-					<Analog VeloReferenz="7042.25"/>
+					<Analog VeloReferenz="400"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
