@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{E71702C8-40BF-24E2-B20E-0A4BBD37E172}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{7A14FFFA-F70C-9BEB-94D1-5AEB8A0FDAFC}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{7E016B85-166E-4B4F-AAC4-ECA8DDD44F13}">ST_PMPS_Attenuator_IO</Name>
@@ -28958,7 +28958,7 @@ External Setpoint Generation:
           <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
           <Name>PlcTask Inputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80084992</ByteSize>
           <Symbol>
             <Name>lcls_twincat_optics.GVL_TestStructs.TestPitch_LimitSwitches.diEncCnt</Name>
             <Comment>Raw encoder count</Comment>
@@ -29878,7 +29878,7 @@ External Setpoint Generation:
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
           <Name>PlcTask Outputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80084992</ByteSize>
           <Symbol>
             <Name>PRG_MR1L1_HOMS.fbMotionStage_m1.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
@@ -30119,7 +30119,7 @@ External Setpoint Generation:
           <AreaNo AreaType="Internal" CreateSymbols="true">3</AreaNo>
           <Name>PlcTask Internal</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80084992</ByteSize>
           <Symbol>
             <Name>MOTION_GVL.stUnknownState</Name>
             <BitSize>2944</BitSize>
@@ -36274,7 +36274,7 @@ External Setpoint Generation:
               </SubItem>
               <SubItem>
                 <Name>.fVelocity</Name>
-                <Value>150</Value>
+                <Value>100</Value>
               </SubItem>
               <SubItem>
                 <Name>.nEnableMode</Name>
@@ -36315,7 +36315,7 @@ External Setpoint Generation:
               </SubItem>
               <SubItem>
                 <Name>.fVelocity</Name>
-                <Value>150</Value>
+                <Value>100</Value>
               </SubItem>
               <SubItem>
                 <Name>.nEnableMode</Name>
@@ -36820,7 +36820,7 @@ External Setpoint Generation:
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">4</AreaNo>
           <Name>PlcTask Retains</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80084992</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.SuccessfulPreemption</Name>
             <Comment> Any time BPTM applies a new BP request which is confirmed</Comment>
@@ -36885,7 +36885,7 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2023-10-03T15:21:59</Value>
+          <Value>2023-10-03T17:58:12</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
