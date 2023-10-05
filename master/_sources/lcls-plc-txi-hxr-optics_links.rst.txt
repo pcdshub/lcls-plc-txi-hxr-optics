@@ -1,0 +1,191 @@
+
+Links
+-----
+
+.. csv-table::
+    :header: Owner A, Item A, Owner B, Item B
+    :align: center
+
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Error
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Motor stall
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Moving negative
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Moving positive
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Ready
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Ready to enable
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Torque reduced
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Warning
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Digital input 1
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Digital input 2
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Sync error
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^TxPDO Toggle
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, WcState^InputToggle
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, WcState^WcState
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Control^Control^Enable
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Control^Control^Reduce torque
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Control^Control^Reset
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Control^Control^Digital output 1
+        Axes^Axis 1 MR1L1-HOMS-YUP, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Velocity^Velocity
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, WcState^InputToggle
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, WcState^WcState
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nDataIn1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Position
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^Diag
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^Error
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^Input cycle counter
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^Ready
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^TxPDO State
+        Axes^Axis 1 MR1L1-HOMS-YUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^Warning
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Error
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Motor stall
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Moving negative
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Moving positive
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Ready
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Ready to enable
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Torque reduced
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Warning
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Digital input 1
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Digital input 2
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Sync error
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^TxPDO Toggle
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, WcState^InputToggle
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, WcState^WcState
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Control^Control^Enable
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Control^Control^Reduce torque
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Control^Control^Reset
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Control^Control^Digital output 1
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Velocity^Velocity
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, WcState^InputToggle
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, WcState^WcState
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nDataIn1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Position
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Status^Diag
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Status^Error
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Status^Input cycle counter
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Status^Ready
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Status^TxPDO State
+        Axes^Axis 2 MR1L1-HOMS-YDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Status^Warning
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Error
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Motor stall
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Moving negative
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Moving positive
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Ready
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Ready to enable
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Torque reduced
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Warning
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Digital input 1
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Digital input 2
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Sync error
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^TxPDO Toggle
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, WcState^InputToggle
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, WcState^WcState
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Control^Control^Enable
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Control^Control^Reduce torque
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Control^Control^Reset
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Control^Control^Digital output 1
+        Axes^Axis 3 MR1L1-HOMS-XUP, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Velocity^Velocity
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, WcState^InputToggle
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, WcState^WcState
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nDataIn1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Position
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Status^Diag
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Status^Error
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Status^Input cycle counter
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Status^Ready
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Status^TxPDO State
+        Axes^Axis 3 MR1L1-HOMS-XUP, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Status^Warning
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Error
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Motor stall
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Moving negative
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Moving positive
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Ready
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Ready to enable
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Torque reduced
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Warning
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Digital input 1
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Digital input 2
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Sync error
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^TxPDO Toggle
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, WcState^InputToggle
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, WcState^WcState
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Control^Control^Enable
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Control^Control^Reduce torque
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Control^Control^Reset
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Control^Control^Digital output 1
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Velocity^Velocity
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, WcState^InputToggle
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, WcState^WcState
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nDataIn1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Position
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Status^Diag
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Status^Error
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Status^Input cycle counter
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Status^Ready
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Status^TxPDO State
+        Axes^Axis 4 MR1L1-HOMS-XDWN, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Status^Warning
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Error
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Motor stall
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Moving negative
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Moving positive
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Ready
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Ready to enable
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Torque reduced
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Warning
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Digital input 1
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Digital input 2
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Sync error
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^TxPDO Toggle
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, WcState^InputToggle
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, WcState^WcState
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Control^Control^Enable
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Control^Control^Reduce torque
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Control^Control^Reset
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Control^Control^Digital output 1
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Velocity^Velocity
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, WcState^InputToggle
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, WcState^WcState
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nDataIn1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Position
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Status^Diag
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Status^Error
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Status^Input cycle counter
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Status^Ready
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Status^TxPDO State
+        Axes^Axis 5 MR1L1-HOMS-PITCH, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Status^Warning
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M1.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis 1 MR1L1-HOMS-YUP, Outputs^ToPlc
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M1.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Digital input 2
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M1.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E01, STM Status^Status^Digital input 1
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M1.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Position
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M2.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis 2 MR1L1-HOMS-YDWN, Outputs^ToPlc
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M2.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Digital input 2
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M2.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E02, STM Status^Status^Digital input 1
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M2.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Position
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M3.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis 3 MR1L1-HOMS-XUP, Outputs^ToPlc
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M3.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Digital input 2
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M3.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E03, STM Status^Status^Digital input 1
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M3.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Position
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M4.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis 4 MR1L1-HOMS-XDWN, Outputs^ToPlc
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M4.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Digital input 2
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M4.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E04, STM Status^Status^Digital input 1
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M4.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Position
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M5.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis 5 MR1L1-HOMS-PITCH, Outputs^ToPlc
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M5.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Digital input 2
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M5.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL7047-E05, STM Status^Status^Digital input 1
+        txi_hxr_optics Instance, PlcTask Inputs^Main.M5.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E08, FB Inputs Channel 1^Position
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_2_PMPS_POST.fbArbiterIO.i_stCurrentBP, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, IO Inputs^CurrentBP
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_2_PMPS_POST.fbArbiterIO.xTxPDO_state, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, SYNC Inputs^TxPDO state
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_2_PMPS_POST.fbArbiterIO.xTxPDO_toggle, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, SYNC Inputs^TxPDO toggle
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.bSTOEnable1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL1004-E13, Channel 1^Input
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.bSTOEnable2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL1004-E13, Channel 2^Input
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.stXdwnEnc^Count, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 2^Position
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.stXupEnc^Count, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E07, FB Inputs Channel 1^Position
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.stYdwnEnc^Count, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 2^Position
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.stYupEnc^Count, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Position
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.bMR1L1_Y_ENC_Ready, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^Ready
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.bMR1L1_Y_ENC_TxPDO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06, FB Inputs Channel 1^Status^TxPDO State
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.fbCoolingPanel.fbFlow_1.iRaw, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL3054-E10, AI Standard Channel 1^Value
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.fbCoolingPanel.fbFlow_2.iRaw, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL3054-E10, AI Standard Channel 2^Value
+        txi_hxr_optics Instance, PlcTask Inputs^PRG_MR1L1_HOMS.fbCoolingPanel.fbPress_1.iRaw, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL3054-E10, AI Standard Channel 3^Value
+        txi_hxr_optics Instance, PlcTask Outputs^GVL_PMPS.fbFastFaultOutput1.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_FFO, Channel 1^Output
+        txi_hxr_optics Instance, PlcTask Outputs^Main.M1.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis 1 MR1L1-HOMS-YUP, Inputs^FromPlc
+        txi_hxr_optics Instance, PlcTask Outputs^Main.M2.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis 2 MR1L1-HOMS-YDWN, Inputs^FromPlc
+        txi_hxr_optics Instance, PlcTask Outputs^Main.M3.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis 3 MR1L1-HOMS-XUP, Inputs^FromPlc
+        txi_hxr_optics Instance, PlcTask Outputs^Main.M4.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis 4 MR1L1-HOMS-XDWN, Inputs^FromPlc
+        txi_hxr_optics Instance, PlcTask Outputs^Main.M5.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis 5 MR1L1-HOMS-PITCH, Inputs^FromPlc
+        txi_hxr_optics Instance, PlcTask Outputs^PRG_2_PMPS_POST.fbArbiterIO.q_stRequestedBP, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, IO Outputs^RequestedBP
+        txi_hxr_optics Instance, PlcTask Outputs^PRG_MR1L1_HOMS.bActivateVarCool, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL2004-E14, Channel 1^Output
+        txi_hxr_optics Instance, PlcTask Outputs^PRG_MR1L1_HOMS.nMR1L1_Y_ENC_PMPS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, IO Outputs^MR1L1_Y_ENC
