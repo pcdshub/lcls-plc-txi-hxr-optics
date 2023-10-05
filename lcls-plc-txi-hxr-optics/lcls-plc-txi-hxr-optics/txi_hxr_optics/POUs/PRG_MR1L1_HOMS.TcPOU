@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_MR1L1_HOMS" Id="{098f7964-1244-4f59-9731-b9e688a9b15c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_MR1L1_HOMS
+VAR
+    fbMotionStage_m1, fbMotionStage_m2, fbMotionStage_m3, fbMotionStage_m4, fbMotionStage_m5 : FB_MotionStage;
+
+    {attribute 'TcLinkTo' := '.fbRunHOMS.bSTOEnable1:=TIIB[MR1L1-EL1004-E13]^Channel 1^Input;
+                              .fbRunHOMS.bSTOEnable2:=TIIB[MR1L1-EL1004-E13]^Channel 2^Input;
+                              .fbRunHOMS.stYupEnc.Count:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Position;
+                              .fbRunHOMS.stYdwnEnc.Count:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 2^Position;
+                              .fbRunHOMS.stXupEnc.Count:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 1^Position;
+                              .fbRunHOMS.stXdwnEnc.Count:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 2^Position'}
+    {attribute 'pytmc' := '
+        pv: MR1L1:HOMS
+    '}
+    MR1L1 : DUT_HOMS;
+    // MR1L1 Y Encoder for PMPS Veto Device
+    ///////////////////////////////////////
+        {attribute 'TcLinkTo' := 'TIIB[PMPS_PRE]^IO Outputs^MR1K1_Y_ENC'}
+        nMR1K1_Y_ENC_PMPS AT %Q* : UDINT;
+        {attribute 'TcLinkTo' := 'TIIB[EL5042_M1K1_Yupdwn]^FB Inputs Channel 1^Status^Ready'}
+        bMR1K1_Y_ENC_Ready AT %I* : BOOL;
+        {attribute 'TcLinkTo' := 'TIIB[EL5042_M1K1_Yupdwn]^FB Inputs Channel 1^Status^TxPDO State'}
+        bMR1K1_Y_ENC_TxPDO AT %I* : BOOL;
+
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// MR1L3 BECKHOFF
+MR1L1.fbRunHOMS(stYup:=Main.M1,
+               stYdwn:=Main.M2,
+               stXup:=Main.M3,
+               stXdwn:=Main.M4,
+               stPitch:=Main.M5,
+               nYupEncRef:=GVL_MR1L1_Constants.nYUP_ENC_REF,
+               nYdwnEncRef:=GVL_MR1L1_Constants.nYDWN_ENC_REF,
+               nXupEncRef:=GVL_MR1L1_Constants.nXUP_ENC_REF,
+               nXdwnEncRef:=GVL_MR1L1_Constants.nXDWN_ENC_REF,
+               bExecuteCoupleY:=MR1L1.bExecuteCoupleY,
+               bExecuteCoupleX:=MR1L1.bExecuteCoupleX,
+               bExecuteDecoupleY:=MR1L1.bExecuteDecoupleY,
+               bExecuteDecoupleX:=MR1L1.bExecuteDecoupleX,
+               bGantryAlreadyCoupledY=>MR1L1.bGantryAlreadyCoupledY,
+               bGantryAlreadyCoupledX=>MR1L1.bGantryAlreadyCoupledX,
+               nCurrGantryY=>MR1L1.nCurrGantryY,
+               nCurrGantryX=>MR1L1.nCurrGantryX);
+// No slave motion through Epics
+Main.M2.bExecute := FALSE; // MR1L1-Ydwn
+Main.M4.bExecute := FALSE; // MR1L1-Xdwn
+
+fbMotionStage_m1(stMotionStage:=Main.M1);
+fbMotionStage_m2(stMotionStage:=Main.M2);
+fbMotionStage_m3(stMotionStage:=Main.M3);
+fbMotionStage_m4(stMotionStage:=Main.M4);
+fbMotionStage_m5(stMotionStage:=Main.M5);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
