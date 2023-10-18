@@ -2185,6 +2185,7 @@ External Setpoint Generation:
 				<MotionControl Time="0.1"/>
 				<TargetPosControl Time="2"/>
 				<OtherSettings AllowMotionCmdToSlave="true" AllowMotionCmdToExtSetGenAxis="true" PulseDistancePos="100"/>
+				<ParameterChanged>257</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="0.00556" MaxCount="#xffffffff">
@@ -2231,7 +2232,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara Inverse="true">
-					<Analog VeloReferenz="400"/>
+					<Analog VeloReferenz="550.176"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
