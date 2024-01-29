@@ -17,12 +17,13 @@ VAR
     MR1L1 : DUT_HOMS;
     // MR1L1 Y Encoder for PMPS Veto Device
     ///////////////////////////////////////
-        {attribute 'TcLinkTo' := 'TIIB[PMPS_PRE]^IO Outputs^MR1L1_Y_ENC'}
-        nMR1L1_Y_ENC_PMPS AT %Q* : UDINT;
-        {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^Ready'}
-        bMR1L1_Y_ENC_Ready AT %I* : BOOL;
-        {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^TxPDO State'}
-        bMR1L1_Y_ENC_TxPDO AT %I* : BOOL;
+    {attribute 'TcLinkTo' := 'TIIB[PMPS_PRE]^IO Outputs^MR1L1_Y_ENC'}
+    nMR1L1_Y_ENC_PMPS AT %Q* : UDINT;
+    {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^Ready'}
+    bMR1L1_Y_ENC_Ready AT %I* : BOOL;
+    {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^TxPDO State'}
+    bMR1L1_Y_ENC_TxPDO AT %I* : BOOL;
+    {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^TxPDO State'}
 
 
 END_VAR
@@ -55,6 +56,8 @@ fbMotionStage_m2(stMotionStage:=Main.M2);
 fbMotionStage_m3(stMotionStage:=Main.M3);
 fbMotionStage_m4(stMotionStage:=Main.M4);
 fbMotionStage_m5(stMotionStage:=Main.M5);
+
+nMR1L1_Y_ENC_PMPS := ULINT_TO_UDINT(MR1L1.fbRunHOMS.stYupEnc.Count);
 ]]></ST>
     </Implementation>
   </POU>

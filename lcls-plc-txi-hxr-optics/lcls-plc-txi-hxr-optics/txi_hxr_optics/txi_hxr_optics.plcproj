@@ -46,13 +46,13 @@
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="lcls-twincat-motion">
-      <DefaultResolution>lcls-twincat-motion, * (SLAC)</DefaultResolution>
-      <Namespace>lcls_twincat_motion</Namespace>
+    <PlaceholderReference Include="lcls-twincat-motion-nrw">
+      <DefaultResolution>lcls-twincat-motion-nrw, * (SLAC)</DefaultResolution>
+      <Namespace>lcls_twincat_motion_nrw</Namespace>
     </PlaceholderReference>
-    <PlaceholderReference Include="lcls-twincat-optics">
-      <DefaultResolution>lcls-twincat-optics, * (SLAC)</DefaultResolution>
-      <Namespace>lcls_twincat_optics</Namespace>
+    <PlaceholderReference Include="lcls-twincat-optics-nrw">
+      <DefaultResolution>lcls-twincat-optics-nrw, * (SLAC)</DefaultResolution>
+      <Namespace>lcls_twincat_optics_nrw</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="lcls-twincat-rail">
       <DefaultResolution>lcls-twincat-rail, * (SLAC)</DefaultResolution>
@@ -76,11 +76,11 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="lcls-twincat-motion">
-      <Resolution>lcls-twincat-motion, 1.8.0 (SLAC)</Resolution>
+    <PlaceholderResolution Include="lcls-twincat-motion-nrw">
+      <Resolution>lcls-twincat-motion-nrw, * (SLAC)</Resolution>
     </PlaceholderResolution>
-    <PlaceholderResolution Include="lcls-twincat-optics">
-      <Resolution>lcls-twincat-optics, 0.6.1 (SLAC)</Resolution>
+    <PlaceholderResolution Include="lcls-twincat-optics-nrw">
+      <Resolution>lcls-twincat-optics-nrw, * (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="lcls-twincat-rail">
       <Resolution>lcls-twincat-rail, * (SLAC)</Resolution>
