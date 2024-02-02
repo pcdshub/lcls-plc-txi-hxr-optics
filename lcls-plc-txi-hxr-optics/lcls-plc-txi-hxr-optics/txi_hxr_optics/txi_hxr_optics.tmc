@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{3B301D6B-2898-3CB1-9C4A-DAD870D4BFEE}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{A2639671-D4B2-8BC0-DF30-C53E60F303B3}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="Tc2_System">T_AmsNetID</Name>
@@ -36879,7 +36879,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637298304</BitOffs>
+            <BitOffs>638743104</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bLimitForwardEnable</Name>
@@ -36892,7 +36892,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637306304</BitOffs>
+            <BitOffs>638751104</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bLimitBackwardEnable</Name>
@@ -36905,7 +36905,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637306312</BitOffs>
+            <BitOffs>638751112</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bHome</Name>
@@ -36918,7 +36918,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637306320</BitOffs>
+            <BitOffs>638751120</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bHardwareEnable</Name>
@@ -36941,7 +36941,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637306336</BitOffs>
+            <BitOffs>638751136</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.nRawEncoderULINT</Name>
@@ -36954,7 +36954,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637306368</BitOffs>
+            <BitOffs>638751168</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.nRawEncoderUINT</Name>
@@ -36967,7 +36967,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637306432</BitOffs>
+            <BitOffs>638751232</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.nRawEncoderINT</Name>
@@ -36980,7 +36980,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637306448</BitOffs>
+            <BitOffs>638751248</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.Axis.NcToPlc</Name>
@@ -36992,7 +36992,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637323584</BitOffs>
+            <BitOffs>638768384</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bLimitForwardEnable</Name>
@@ -37005,7 +37005,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637331584</BitOffs>
+            <BitOffs>638776384</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bLimitBackwardEnable</Name>
@@ -37018,7 +37018,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637331592</BitOffs>
+            <BitOffs>638776392</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bHome</Name>
@@ -37031,7 +37031,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637331600</BitOffs>
+            <BitOffs>638776400</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bHardwareEnable</Name>
@@ -37054,7 +37054,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637331616</BitOffs>
+            <BitOffs>638776416</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.nRawEncoderULINT</Name>
@@ -37067,7 +37067,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637331648</BitOffs>
+            <BitOffs>638776448</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.nRawEncoderUINT</Name>
@@ -37080,7 +37080,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637331712</BitOffs>
+            <BitOffs>638776512</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.nRawEncoderINT</Name>
@@ -37093,7 +37093,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637331728</BitOffs>
+            <BitOffs>638776528</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.Axis.NcToPlc</Name>
@@ -37105,7 +37105,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637348864</BitOffs>
+            <BitOffs>638793664</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bLimitForwardEnable</Name>
@@ -37118,7 +37118,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637356864</BitOffs>
+            <BitOffs>638801664</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bLimitBackwardEnable</Name>
@@ -37131,7 +37131,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637356872</BitOffs>
+            <BitOffs>638801672</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bHome</Name>
@@ -37144,7 +37144,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637356880</BitOffs>
+            <BitOffs>638801680</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bHardwareEnable</Name>
@@ -37167,7 +37167,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637356896</BitOffs>
+            <BitOffs>638801696</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.nRawEncoderULINT</Name>
@@ -37180,7 +37180,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637356928</BitOffs>
+            <BitOffs>638801728</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.nRawEncoderUINT</Name>
@@ -37193,7 +37193,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637356992</BitOffs>
+            <BitOffs>638801792</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.nRawEncoderINT</Name>
@@ -37206,7 +37206,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637357008</BitOffs>
+            <BitOffs>638801808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.Axis.NcToPlc</Name>
@@ -37218,7 +37218,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637374144</BitOffs>
+            <BitOffs>638818944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bLimitForwardEnable</Name>
@@ -37231,7 +37231,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637382144</BitOffs>
+            <BitOffs>638826944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bLimitBackwardEnable</Name>
@@ -37244,7 +37244,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637382152</BitOffs>
+            <BitOffs>638826952</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bHome</Name>
@@ -37257,7 +37257,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637382160</BitOffs>
+            <BitOffs>638826960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bHardwareEnable</Name>
@@ -37280,7 +37280,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637382176</BitOffs>
+            <BitOffs>638826976</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.nRawEncoderULINT</Name>
@@ -37293,7 +37293,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637382208</BitOffs>
+            <BitOffs>638827008</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.nRawEncoderUINT</Name>
@@ -37306,7 +37306,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637382272</BitOffs>
+            <BitOffs>638827072</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.nRawEncoderINT</Name>
@@ -37319,7 +37319,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637382288</BitOffs>
+            <BitOffs>638827088</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.Axis.NcToPlc</Name>
@@ -37331,7 +37331,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637399424</BitOffs>
+            <BitOffs>638844224</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.bLimitForwardEnable</Name>
@@ -37344,7 +37344,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637407424</BitOffs>
+            <BitOffs>638852224</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.bLimitBackwardEnable</Name>
@@ -37357,7 +37357,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637407432</BitOffs>
+            <BitOffs>638852232</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.bHome</Name>
@@ -37370,7 +37370,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637407440</BitOffs>
+            <BitOffs>638852240</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.bHardwareEnable</Name>
@@ -37393,7 +37393,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637407456</BitOffs>
+            <BitOffs>638852256</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.nRawEncoderULINT</Name>
@@ -37406,7 +37406,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637407488</BitOffs>
+            <BitOffs>638852288</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.nRawEncoderUINT</Name>
@@ -37419,7 +37419,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637407552</BitOffs>
+            <BitOffs>638852352</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5.nRawEncoderINT</Name>
@@ -37432,7 +37432,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>637407568</BitOffs>
+            <BitOffs>638852368</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -37534,131 +37534,6 @@ These features efficiently address the addition, removal, and verification of be
             <BitOffs>637133312</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>Main.M1.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637297280</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M1.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637306328</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M2.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637322560</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M2.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637331608</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M3.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637347840</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M3.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637356888</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M4.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637373120</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M4.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637382168</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M5.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637398400</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Main.M5.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>637407448</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>GVL_PMPS.fbFastFaultOutput1.q_xFastFaultOut</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
@@ -37676,7 +37551,132 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638373384</BitOffs>
+            <BitOffs>638246984</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M1.Axis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638742080</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M1.bBrakeRelease</Name>
+            <Comment> NC Brake Output: TRUE to release brake</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638751128</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M2.Axis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638767360</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M2.bBrakeRelease</Name>
+            <Comment> NC Brake Output: TRUE to release brake</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638776408</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M3.Axis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638792640</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M3.bBrakeRelease</Name>
+            <Comment> NC Brake Output: TRUE to release brake</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638801688</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M4.Axis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638817920</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M4.bBrakeRelease</Name>
+            <Comment> NC Brake Output: TRUE to release brake</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638826968</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M5.Axis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638843200</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Main.M5.bBrakeRelease</Name>
+            <Comment> NC Brake Output: TRUE to release brake</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>638852248</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -43925,6 +43925,127 @@ These features efficiently address the addition, removal, and verification of be
             <BitOffs>637297200</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>GVL_MR1L1_Constants.nYUP_ENC_REF</Name>
+            <BitSize>64</BitSize>
+            <BaseType>ULINT</BaseType>
+            <Default>
+              <Value>108558460</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>637297216</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_MR1L1_Constants.nYDWN_ENC_REF</Name>
+            <BitSize>64</BitSize>
+            <BaseType>ULINT</BaseType>
+            <Default>
+              <Value>108761210</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>637297280</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_MR1L1_Constants.nXUP_ENC_REF</Name>
+            <BitSize>64</BitSize>
+            <BaseType>ULINT</BaseType>
+            <Default>
+              <Value>20664670</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>637297344</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_MR1L1_Constants.nXDWN_ENC_REF</Name>
+            <BitSize>64</BitSize>
+            <BaseType>ULINT</BaseType>
+            <Default>
+              <Value>20133000</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>637297408</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_PMPS.fbArbiter1</Name>
+            <BitSize>474624</BitSize>
+            <BaseType Namespace="PMPS">FB_Arbiter</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: PLC:TXI:LFE:OPTICS:ARB:01</Value>
+              </Property>
+              <Property>
+                <Name>old_input_assignments</Name>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>637297472</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_PMPS.fbArbiter2</Name>
+            <BitSize>474624</BitSize>
+            <BaseType Namespace="PMPS">FB_Arbiter</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: PLC:TXI:LFE:OPTICS:ARB:02</Value>
+              </Property>
+              <Property>
+                <Name>old_input_assignments</Name>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>637772096</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_PMPS.fbFastFaultOutput1</Name>
+            <BitSize>495296</BitSize>
+            <BaseType Namespace="PMPS">FB_HardwareFFOutput</BaseType>
+            <Default>
+              <SubItem>
+                <Name>.bAutoReset</Name>
+                <Value>1</Value>
+              </SubItem>
+              <SubItem>
+                <Name>.i_sNetID</Name>
+                <String>172.21.42.126.1.1</String>
+              </SubItem>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: PLC:TXI:LFE:OPTICS:FFO:01</Value>
+              </Property>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>.q_xFastFaultOut:=TIIB[PMPS_FFO]^Channel 1^Output</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>638246720</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>Main.M1</Name>
             <BitSize>25280</BitSize>
             <BaseType Namespace="lcls_twincat_motion_nrw">ST_MotionStage</BaseType>
@@ -43963,7 +44084,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>637297216</BitOffs>
+            <BitOffs>638742016</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2</Name>
@@ -44004,7 +44125,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>637322496</BitOffs>
+            <BitOffs>638767296</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3</Name>
@@ -44045,7 +44166,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>637347776</BitOffs>
+            <BitOffs>638792576</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4</Name>
@@ -44086,7 +44207,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>637373056</BitOffs>
+            <BitOffs>638817856</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M5</Name>
@@ -44127,128 +44248,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>637398336</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_MR1L1_Constants.nYUP_ENC_REF</Name>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Default>
-              <Value>108558460</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>637423616</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_MR1L1_Constants.nYDWN_ENC_REF</Name>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Default>
-              <Value>108761210</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>637423680</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_MR1L1_Constants.nXUP_ENC_REF</Name>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Default>
-              <Value>20664670</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>637423744</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_MR1L1_Constants.nXDWN_ENC_REF</Name>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Default>
-              <Value>20133000</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>637423808</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_PMPS.fbArbiter1</Name>
-            <BitSize>474624</BitSize>
-            <BaseType Namespace="PMPS">FB_Arbiter</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: PLC:TXI:LFE:OPTICS:ARB:01</Value>
-              </Property>
-              <Property>
-                <Name>old_input_assignments</Name>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>637423872</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_PMPS.fbArbiter2</Name>
-            <BitSize>474624</BitSize>
-            <BaseType Namespace="PMPS">FB_Arbiter</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: PLC:TXI:LFE:OPTICS:ARB:02</Value>
-              </Property>
-              <Property>
-                <Name>old_input_assignments</Name>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>637898496</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_PMPS.fbFastFaultOutput1</Name>
-            <BitSize>495296</BitSize>
-            <BaseType Namespace="PMPS">FB_HardwareFFOutput</BaseType>
-            <Default>
-              <SubItem>
-                <Name>.bAutoReset</Name>
-                <Value>1</Value>
-              </SubItem>
-              <SubItem>
-                <Name>.i_sNetID</Name>
-                <String>172.21.42.126.1.1</String>
-              </SubItem>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: PLC:TXI:LFE:OPTICS:FFO:01</Value>
-              </Property>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>.q_xFastFaultOut:=TIIB[PMPS_FFO]^Channel 1^Output</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>638373120</BitOffs>
+            <BitOffs>638843136</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersion</Name>
@@ -44596,7 +44596,7 @@ These features efficiently address the addition, removal, and verification of be
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2024-01-31T14:10:54</Value>
+          <Value>2024-02-02T15:12:34</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
