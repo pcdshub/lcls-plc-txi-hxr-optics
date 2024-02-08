@@ -701,15 +701,12 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{E58D6B6F-779B-4FB8-B2FB-7EC57B203F5D}" Namespace="lcls_twincat_motion_nrw" AutoDeleteType="true">ST_EL5042_Status</Name>
+			<Name GUID="{CCE7368B-ABB0-4E30-99D6-FD8F3F1113D4}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_EL5042_Status</Name>
 			<BitSize>0</BitSize>
 			<BaseType GUID="{FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF}"/>
-			<Hides>
-				<Hide GUID="{A425034D-A105-488E-8D65-623AD3F2B799}"/>
-			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{A5503A62-B3A8-4B14-99E0-DD39FC7ED153}" Namespace="lcls_twincat_motion_nrw" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
+			<Name GUID="{8F594DAD-9D35-43F4-92F9-CD0C040464C1}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
 			<Comment>
 				<![CDATA[ Renishaw BiSS-C absolute encoder used with an EL5042]]>
 			</Comment>
@@ -731,7 +728,7 @@ External Setpoint Generation:
 			</SubItem>
 			<SubItem>
 				<Name>Status</Name>
-				<Type GUID="{E58D6B6F-779B-4FB8-B2FB-7EC57B203F5D}" Namespace="lcls_twincat_motion_nrw">ST_EL5042_Status</Type>
+				<Type GUID="{CCE7368B-ABB0-4E30-99D6-FD8F3F1113D4}" Namespace="lcls_twincat_motion">ST_EL5042_Status</Type>
 				<Comment>
 					<![CDATA[ Status struct placeholder]]>
 				</Comment>
@@ -747,9 +744,6 @@ External Setpoint Generation:
 				<BitSize>64</BitSize>
 				<BitOffs>64</BitOffs>
 			</SubItem>
-			<Hides>
-				<Hide GUID="{3A27B9F5-52A3-4A05-9D04-C32B7C0901A3}"/>
-			</Hides>
 		</DataType>
 		<DataType>
 			<Name GUID="{7E016B85-166E-4B4F-AAC4-ECA8DDD44F13}">ST_PMPS_Attenuator_IO</Name>
@@ -1238,7 +1232,15 @@ External Setpoint Generation:
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
 				<Var>
-					<Name>lcls_twincat_optics_nrw.GVL_TestStructs.TestPitch_LimitSwitches.diEncCnt</Name>
+					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_Ready</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_TxPDO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>lcls_twincat_optics.GVL_TestStructs.TestPitch_LimitSwitches.diEncCnt</Name>
 					<Comment>
 						<![CDATA[Raw encoder count]]>
 					</Comment>
@@ -1505,7 +1507,7 @@ External Setpoint Generation:
 					<Comment>
 						<![CDATA[ Encoders]]>
 					</Comment>
-					<Type GUID="{A5503A62-B3A8-4B14-99E0-DD39FC7ED153}" Namespace="lcls_twincat_motion_nrw">ST_RenishawAbsEnc</Type>
+					<Type GUID="{8F594DAD-9D35-43F4-92F9-CD0C040464C1}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1527,7 +1529,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.stYdwnEnc</Name>
-					<Type GUID="{A5503A62-B3A8-4B14-99E0-DD39FC7ED153}" Namespace="lcls_twincat_motion_nrw">ST_RenishawAbsEnc</Type>
+					<Type GUID="{8F594DAD-9D35-43F4-92F9-CD0C040464C1}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1549,7 +1551,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.stXupEnc</Name>
-					<Type GUID="{A5503A62-B3A8-4B14-99E0-DD39FC7ED153}" Namespace="lcls_twincat_motion_nrw">ST_RenishawAbsEnc</Type>
+					<Type GUID="{8F594DAD-9D35-43F4-92F9-CD0C040464C1}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1571,7 +1573,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.stXdwnEnc</Name>
-					<Type GUID="{A5503A62-B3A8-4B14-99E0-DD39FC7ED153}" Namespace="lcls_twincat_motion_nrw">ST_RenishawAbsEnc</Type>
+					<Type GUID="{8F594DAD-9D35-43F4-92F9-CD0C040464C1}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1618,14 +1620,6 @@ External Setpoint Generation:
 						<![CDATA[ Connect to encoder "Position" input]]>
 					</Comment>
 					<Type>ULINT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_Ready</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_TxPDO</Name>
-					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>PRG_2_PMPS_POST.fbArbiterIO.i_stCurrentBP</Name>
@@ -2416,6 +2410,10 @@ External Setpoint Generation:
 					</SubVar>
 				</Var>
 				<Var>
+					<Name>GVL_PMPS.fbFastFaultOutput1.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>Main.M1.Axis.PlcToNc</Name>
 					<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 				</Var>
@@ -2468,10 +2466,6 @@ External Setpoint Generation:
 					<Comment>
 						<![CDATA[ NC Brake Output: TRUE to release brake]]>
 					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_PMPS.fbFastFaultOutput1.q_xFastFaultOut</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
