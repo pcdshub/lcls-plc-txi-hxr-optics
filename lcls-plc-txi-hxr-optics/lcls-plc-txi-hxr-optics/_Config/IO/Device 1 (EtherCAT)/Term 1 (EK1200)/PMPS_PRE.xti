@@ -363,6 +363,10 @@
 								<BitSize>16</BitSize>
 							</DataType>
 							<DataType>
+								<Name>ULINT</Name>
+								<BitSize>64</BitSize>
+							</DataType>
+							<DataType>
 								<Name>USINT</Name>
 								<BitSize>8</BitSize>
 							</DataType>
@@ -662,7 +666,7 @@
 							</DataType>
 							<DataType>
 								<Name>DT6000</Name>
-								<BitSize>1808</BitSize>
+								<BitSize>1840</BitSize>
 								<SubItem>
 									<SubIdx>0</SubIdx>
 									<Name>SubIndex 000</Name>
@@ -689,8 +693,8 @@
 								<SubItem>
 									<SubIdx>2</SubIdx>
 									<Name>MR1L1_Y_ENC</Name>
-									<Type>UDINT</Type>
-									<BitSize>32</BitSize>
+									<Type>ULINT</Type>
+									<BitSize>64</BitSize>
 									<BitOffs>1776</BitOffs>
 									<Flags>
 										<Access>rw</Access>
@@ -791,7 +795,7 @@
 									<SubItem>
 										<Name>SubIndex 009</Name>
 										<Info>
-											<DefaultData>20020060</DefaultData>
+											<DefaultData>40020060</DefaultData>
 										</Info>
 									</SubItem>
 								</Info>
@@ -928,7 +932,7 @@
 								<Index>#x6000</Index>
 								<Name>Outputs</Name>
 								<Type>DT6000</Type>
-								<BitSize>1808</BitSize>
+								<BitSize>1840</BitSize>
 								<Info>
 									<SubItem>
 										<Name>SubIndex 000</Name>
@@ -947,7 +951,7 @@
 									<SubItem>
 										<Name>MR1L1_Y_ENC</Name>
 										<Info>
-											<DefaultData>00000000</DefaultData>
+											<DefaultData>0000000000000000</DefaultData>
 										</Info>
 									</SubItem>
 								</Info>
@@ -988,7 +992,7 @@
 		<EtherCAT SlaveType="3" AdsServerAddress="ac15882b0205eb03" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" EoeType="1" FoeType="1" VendorId="#x00000002" ProductCode="#x1a273052" RevisionNo="#x00050000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="2000" GenerateOwnNetId="true" CheckRevisionNoType="3" PortPhys="51" DcTimeLoopControlOnly="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6695 EtherCAT Bridge terminal (Primary)" Desc="EL6695">
 			<SyncMan>0010000426000100010000008000da050004001026010000</SyncMan>
 			<SyncMan>0016000422000100020000008000da050004001622010000</SyncMan>
-			<SyncMan>001ce0006400010003000000000000000000001c64010000</SyncMan>
+			<SyncMan>001ce4006400010003000000000000000000001c64010000</SyncMan>
 			<SyncMan>008ede002000010004000000000000000200008e20010000</SyncMan>
 			<Fmmu>0000000000000000001c00020100000001000000000000000000000000000000</Fmmu>
 			<Fmmu>0000000000000000008e00010100000002000000000000000000000000000000</Fmmu>
@@ -1141,8 +1145,8 @@
 				<Entry Name="RequestedBP" BitLen="240" Index="#x7000" Sub="#x01">
 					<Type GUID="{292CD354-C7C0-4A61-AAD0-1C85DD69646B}">ST_BeamParams_IO</Type>
 				</Entry>
-				<Entry Name="MR1L1_Y_ENC" BitLen="32" Index="#x7000" Sub="#x02">
-					<Type>UDINT</Type>
+				<Entry Name="MR1L1_Y_ENC" BitLen="64" Index="#x7000" Sub="#x02">
+					<Type>ULINT</Type>
 				</Entry>
 			</Pdo>
 			<CoeProfile ProfileNo="5001"/>

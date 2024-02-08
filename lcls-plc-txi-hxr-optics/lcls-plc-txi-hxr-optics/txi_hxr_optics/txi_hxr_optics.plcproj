@@ -54,10 +54,6 @@
       <DefaultResolution>lcls-twincat-optics, * (SLAC)</DefaultResolution>
       <Namespace>lcls_twincat_optics</Namespace>
     </PlaceholderReference>
-    <PlaceholderReference Include="lcls-twincat-rail">
-      <DefaultResolution>lcls-twincat-rail, * (SLAC)</DefaultResolution>
-      <Namespace>lcls_twincat_rail</Namespace>
-    </PlaceholderReference>
     <PlaceholderReference Include="PMPS">
       <DefaultResolution>PMPS, * (SLAC - LCLS)</DefaultResolution>
       <Namespace>PMPS</Namespace>
@@ -77,13 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <PlaceholderResolution Include="lcls-twincat-motion">
-      <Resolution>lcls-twincat-motion, 1.8.0 (SLAC)</Resolution>
+      <Resolution>lcls-twincat-motion, 4.0.6 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="lcls-twincat-optics">
       <Resolution>lcls-twincat-optics, 0.6.1 (SLAC)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="lcls-twincat-rail">
-      <Resolution>lcls-twincat-rail, * (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
       <Resolution>PMPS, 3.0.14 (SLAC - LCLS)</Resolution>
