@@ -23,7 +23,14 @@ VAR
     bMR1L1_Y_ENC_Ready AT %I* : BOOL;
     {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^TxPDO State'}
     bMR1L1_Y_ENC_TxPDO AT %I* : BOOL;
-    {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^TxPDO State'}
+    {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL2004-E14]^Channel 1^Output'}
+     {attribute 'pytmc' := '
+        pv: MR1L1:HOMS:VCV
+        io: io
+        field: ZNAM OFF
+        field: ONAM ON
+    '}
+    bActivateVarCool AT %Q* : BOOL;
 
 
 END_VAR
