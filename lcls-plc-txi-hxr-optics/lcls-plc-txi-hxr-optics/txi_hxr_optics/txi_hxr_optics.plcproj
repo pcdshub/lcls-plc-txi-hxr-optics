@@ -76,7 +76,7 @@
       <Resolution>lcls-twincat-motion, 4.0.6 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="lcls-twincat-optics">
-      <Resolution>lcls-twincat-optics, 0.6.1 (SLAC)</Resolution>
+      <Resolution>lcls-twincat-optics, 0.7.0 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
       <Resolution>PMPS, 3.0.14 (SLAC - LCLS)</Resolution>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <POU Name="PRG_MR1L1_HOMS" Id="{098f7964-1244-4f59-9731-b9e688a9b15c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_MR1L1_HOMS
 VAR
@@ -31,6 +31,16 @@ VAR
         field: ONAM ON
     '}
     bActivateVarCool AT %Q* : BOOL;
+        // MR1L1 Flow Sensors
+    {attribute 'TcLinkTo' := '.fbFlow_1.iRaw := TIIB[MR1L1-EL3054-E10]^AI Standard Channel 1^Value;
+                              .fbFlow_2.iRaw := TIIB[MR1L1-EL3054-E10]^AI Standard Channel 2^Value;
+                              .fbPress_1.iRaw := TIIB[MR1L1-EL3054-E10]^AI Standard Channel 3^Value
+    '}
+    {attribute 'pytmc' := '
+        pv: MR1L1:HOMS
+    '}
+    fbCoolingPanel : FB_Axilon_Cooling_2f1p;
+
 
 
 END_VAR
@@ -65,6 +75,8 @@ fbMotionStage_m4(stMotionStage:=Main.M4);
 fbMotionStage_m5(stMotionStage:=Main.M5);
 
 nMR1L1_Y_ENC_PMPS := Main.M1.nRawEncoderULINT;
+
+fbCoolingPanel();
 ]]></ST>
     </Implementation>
   </POU>
