@@ -1297,7 +1297,7 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{708DF7C6-3EAF-4478-B40A-58C816F4317B}" Name="txi_hxr_optics" PrjFilePath="..\..\txi_hxr_optics\txi_hxr_optics.plcproj" TmcFilePath="..\..\txi_hxr_optics\txi_hxr_optics.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="txi_hxr_optics\txi_hxr_optics.tmc" TmcHash="{E964D042-ABAC-FD77-FCB6-740B9670257E}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="txi_hxr_optics\txi_hxr_optics.tmc" TmcHash="{5FA56D26-8270-A892-3B91-B26AE49542CD}">
 			<Name>txi_hxr_optics Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">

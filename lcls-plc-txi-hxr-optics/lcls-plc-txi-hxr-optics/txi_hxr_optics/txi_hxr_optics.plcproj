@@ -12,6 +12,10 @@
     <Implicit_KindOfTask>{78d0c89d-5579-4169-8cac-64f9fbf409c1}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{1ede89ff-d945-405d-a1ac-aec2f4a2982b}</Implicit_Jitter_Distribution>
     <LibraryReferences>{ae66b155-6143-4bed-9db5-d2ceda5becc8}</LibraryReferences>
+    <Company>SLAC</Company>
+    <Released>false</Released>
+    <Title>lcls-plc-txi-hxr-optics</Title>
+    <ProjectVersion>0.0.0</ProjectVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GVLs\GVL_MR1L1_Constants.TcGVL">
