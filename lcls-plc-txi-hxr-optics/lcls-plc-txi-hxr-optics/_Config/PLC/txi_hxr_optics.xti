@@ -1297,7 +1297,7 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{708DF7C6-3EAF-4478-B40A-58C816F4317B}" Name="txi_hxr_optics" PrjFilePath="..\..\txi_hxr_optics\txi_hxr_optics.plcproj" TmcFilePath="..\..\txi_hxr_optics\txi_hxr_optics.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="txi_hxr_optics\txi_hxr_optics.tmc" TmcHash="{895C1373-F05B-DA1B-620E-17DE782F4700}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="txi_hxr_optics\txi_hxr_optics.tmc" TmcHash="{5FA56D26-8270-A892-3B91-B26AE49542CD}">
 			<Name>txi_hxr_optics Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -1306,14 +1306,6 @@ External Setpoint Generation:
 					<Name>lcls_twincat_optics.GVL_TestStructs.TestPitch_LimitSwitches.diEncCnt</Name>
 					<Comment><![CDATA[Raw encoder count]]></Comment>
 					<Type>LINT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_Ready</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_TxPDO</Name>
-					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>PRG_MR1L1_HOMS.fbMotionStage_m1.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -1380,6 +1372,29 @@ External Setpoint Generation:
 					<Name>PRG_MR1L1_HOMS.MR1L1.fbRunHOMS.fbAutoCoupleX.gantry_diff_limit.SEnc.Count</Name>
 					<Comment><![CDATA[ Connect to encoder "Position" input]]></Comment>
 					<Type>ULINT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_Ready</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_MR1L1_HOMS.bMR1L1_Y_ENC_TxPDO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_MR1L1_HOMS.fbCoolingPanel.fbFlow_1.iRaw</Name>
+					<Comment><![CDATA[ Connect this input to the terminal]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_MR1L1_HOMS.fbCoolingPanel.fbPress_1.iRaw</Name>
+					<Comment><![CDATA[ Connect this input to the terminal]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_MR1L1_HOMS.fbCoolingPanel.fbFlow_2.iRaw</Name>
+					<Comment><![CDATA[ Connect this input to the terminal]]></Comment>
+					<Type>INT</Type>
 				</Var>
 				<Var>
 					<Name>PRG_2_PMPS_POST.fbArbiterIO.i_stCurrentBP</Name>
@@ -1592,10 +1607,6 @@ External Setpoint Generation:
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
 				<Var>
-					<Name>PRG_MR1L1_HOMS.bActivateVarCool</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>PRG_MR1L1_HOMS.fbMotionStage_m1.fbDriveVirtual.MasterAxis.PlcToNc</Name>
 					<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 				</Var>
@@ -1619,6 +1630,10 @@ External Setpoint Generation:
 					<Name>PRG_MR1L1_HOMS.nMR1L1_Y_ENC_PMPS</Name>
 					<Comment><![CDATA[////////////////////////////////////]]></Comment>
 					<Type>ULINT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_MR1L1_HOMS.bActivateVarCool</Name>
+					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>PRG_2_PMPS_POST.fbArbiterIO.q_stRequestedBP</Name>
@@ -1718,6 +1733,11 @@ External Setpoint Generation:
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL2004-E14">
 				<Link VarA="PlcTask Outputs^PRG_MR1L1_HOMS.bActivateVarCool" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL3054-E10">
+				<Link VarA="PlcTask Inputs^PRG_MR1L1_HOMS.fbCoolingPanel.fbFlow_1.iRaw" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_MR1L1_HOMS.fbCoolingPanel.fbFlow_2.iRaw" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_MR1L1_HOMS.fbCoolingPanel.fbPress_1.iRaw" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PLC Junction 1 (EK1122)^X1 MR1L1 (EK1100)^MR1L1-EL5042-E06">
 				<Link VarA="PlcTask Inputs^Main.M1.nRawEncoderULINT" VarB="FB Inputs Channel 1^Position" AutoLink="true"/>
