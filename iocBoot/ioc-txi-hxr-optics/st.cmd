@@ -1,11 +1,11 @@
-#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.6.1/bin/rhel7-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.8.0/bin/rhel7-x86_64/adsIoc
 ################### AUTO-GENERATED DO NOT EDIT ###################
 #
 #         Project: lcls-plc-txi-hxr-optics.tsproj
 #        PLC name: txi_hxr_optics (txi_hxr_optics Instance)
-# Generated using: pytmc 2.16.0
-# Project version: e84f931
-#    Project hash: e84f931084156e6beb7de107ae920d62ce40672a
+# Generated using: pytmc 2.17.0
+# Project version: 153c68b
+#    Project hash: 153c68bc19e703f0040547d0a4b9343d9d92ffcd
 #     PLC IP/host: 172.21.136.43
 #      PLC Net ID: 172.21.136.43.1.1
 #  ** Production mode IOC **
@@ -192,10 +192,10 @@ dbLoadRecords("save_restoreStatus.db", "P=PLC:TXI:HXR:OPTICS:")
 dbLoadRecords("caPutLog.db", "IOC=$(IOC)")
 
 ## TwinCAT task, application, and project information databases ##
-dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:TXI:HXR:OPTICS,IDX=1")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:TXI:HXR:OPTICS,IDX=1,TASK_PORT=350")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:TXI:HXR:OPTICS")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:TXI:HXR:OPTICS,PROJECT=lcls-plc-txi-hxr-optics.tsproj,HASH=e84f931,VERSION=e84f931,PYTMC=2.16.0,PLC_HOST=172.21.136.43")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:TXI:HXR:OPTICS,PROJECT=lcls-plc-txi-hxr-optics.tsproj,HASH=153c68b,VERSION=153c68b,PYTMC=2.17.0,PLC_HOST=172.21.136.43")
 
 #   lcls-twincat-motion: * -> 4.0.6 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:HXR:OPTICS,DEPENDENCY=lcls-twincat-motion,VERSION=4.0.6,VENDOR=SLAC")
