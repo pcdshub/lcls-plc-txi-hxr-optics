@@ -1,0 +1,266 @@
+
+
+DUTs
+----
+
+
+GVLs
+----
+
+
+Global_Version
+^^^^^^^^^^^^^^
+
+::
+
+    {attribute 'TcGenerated'}
+    {attribute 'no-analysis'}
+    {attribute 'linkalways'}
+    // This function has been automatically generated from the project information.
+    VAR_GLOBAL CONSTANT
+        {attribute 'const_non_replaced'}
+        stLibVersion_lcls_plc_txi_hxr_optics : ST_LibVersion := (iMajor := 1, iMinor := 0, iBuild := 0, iRevision := 0, nFlags := 1, sVersion := '1.0.0');
+    END_VAR
+
+
+
+
+GVL_MR1L1_Constants
+^^^^^^^^^^^^^^^^^^^
+
+::
+
+    {attribute 'qualified_only'}
+    VAR_GLOBAL
+        nYUP_ENC_REF : ULINT := 108558460;
+        nYDWN_ENC_REF : ULINT := 108761210;
+        nXUP_ENC_REF : ULINT := 20664670;
+        nXDWN_ENC_REF : ULINT := 20133000;
+    END_VAR
+
+
+
+
+GVL_PMPS
+^^^^^^^^
+
+::
+
+    {attribute 'qualified_only'}
+    VAR_GLOBAL
+        {attribute 'pytmc' := 'pv: PLC:TXI:LFE:OPTICS:ARB:01'}
+        fbArbiter1: FB_Arbiter(1);
+        {attribute 'pytmc' := 'pv: PLC:TXI:LFE:OPTICS:ARB:02'}
+        fbArbiter2: FB_Arbiter(2);
+        {attribute 'pytmc' := 'pv: PLC:TXI:LFE:OPTICS:FFO:01'}
+        {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO]^Channel 1^Output'}
+        fbFastFaultOutput1: FB_HardwareFFOutput := (bAutoReset := TRUE , i_sNetID:='172.21.42.126.1.1' );
+    END_VAR
+
+
+
+
+Main
+^^^^
+
+::
+
+    {attribute 'qualified_only'}
+    VAR_GLOBAL
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[MR1L1-EL7047-E01]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable:=TIIB[MR1L1-EL7047-E01]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Position'}
+        {attribute 'pytmc' := '
+            pv: MR1L1:HOMS:MMS:YUP
+        '}
+        M1 : ST_MotionStage := (sName:='MR1L1:HOMS:YUP', fVelocity:=100.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+
+
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[MR1L1-EL7047-E02]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable:=TIIB[MR1L1-EL7047-E02]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 2^Position'}
+        {attribute 'pytmc' := '
+            pv: MR1L1:HOMS:MMS:YDWN
+        '}
+        M2 : ST_MotionStage := (sName:='MR1L1:HOMS:YDWN', fVelocity:=100.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[MR1L1-EL7047-E03]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable:=TIIB[MR1L1-EL7047-E03]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 1^Position'}
+        {attribute 'pytmc' := '
+            pv: MR1L1:HOMS:MMS:XUP
+        '}
+        M3 : ST_MotionStage := (sName:='MR1L1:HOMS:XUP', fVelocity:=150.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+
+
+
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[MR1L1-EL7047-E04]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable:=TIIB[MR1L1-EL7047-E04]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 2^Position'}
+        {attribute 'pytmc' := '
+            pv: MR1L1:HOMS:MMS:XDWN
+        '}
+        M4 : ST_MotionStage := (sName:='MR1L1:HOMS:XDWN', fVelocity:=150.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+
+
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[MR1L1-EL7047-E05]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable:=TIIB[MR1L1-EL7047-E05]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT:=TIIB[MR1L1-EL5042-E08]^FB Inputs Channel 1^Position'}
+        {attribute 'pytmc' := '
+            pv: MR1L1:HOMS:MMS:PITCH
+        '}
+        M5 : ST_MotionStage := (sName:='MR1L1:HOMS:PITCH', fVelocity:=150.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE);
+
+    END_VAR
+
+
+
+
+POUs
+----
+
+
+PRG_1_PlcTask
+^^^^^^^^^^^^^
+
+::
+
+    PROGRAM PRG_1_PlcTask
+    VAR
+    END_VAR
+    PRG_MR1L1_HOMS();
+    PRG_2_PMPS_POST();
+
+    END_PROGRAM
+
+
+Related:
+    * `PRG_2_PMPS_POST`_
+    * `PRG_MR1L1_HOMS`_
+
+
+PRG_2_PMPS_POST
+^^^^^^^^^^^^^^^
+
+::
+
+    PROGRAM PRG_2_PMPS_POST
+    VAR
+        fbArbiterIO: FB_SubSysToArbiter_IO;
+        fb_vetoArbiter: FB_VetoArbiter;
+    END_VAR
+    GVL_PMPS.fbFastFaultOutput1.Execute();
+
+    fbArbiterIO(
+        Arbiter:=GVL_PMPS.fbArbiter1,
+        fbFFHWO:=GVL_PMPS.fbFastFaultOutput1);
+    //Arb2 in hutch
+    fb_vetoArbiter(bVeto:= PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.ST1L1],
+                    HigherAuthority := GVL_PMPS.fbArbiter1,
+                    LowerAuthority := GVL_PMPS.fbArbiter2,
+                    FFO := GVL_PMPS.fbFastFaultOutput1);
+
+    //ff2_ff1_link_optics(
+        //io_fbFFHWO := GVL_PMPS.fbFastFaultOutput1,
+        //i_xOK :=  GVL_PMPS.fbFastFaultOutput2.q_xFastFaultOut);
+
+    //Code for Removing arbitration
+    GVL_PMPS.fbArbiter1.AddRequest(nReqID := 47, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'txi-lfe-optics');
+    GVL_PMPS.fbArbiter2.AddRequest(nReqID := 48, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'txi-lfe-optics');
+
+    //send encoder values for veto
+
+    END_PROGRAM
+
+
+Related:
+    * `GVL_PMPS`_
+
+
+PRG_MR1L1_HOMS
+^^^^^^^^^^^^^^
+
+::
+
+    PROGRAM PRG_MR1L1_HOMS
+    VAR
+        fbMotionStage_m1, fbMotionStage_m2, fbMotionStage_m3, fbMotionStage_m4, fbMotionStage_m5 : FB_MotionStage;
+
+        {attribute 'TcLinkTo' := '.fbRunHOMS.bSTOEnable1:=TIIB[MR1L1-EL1004-E13]^Channel 1^Input;
+                                  .fbRunHOMS.bSTOEnable2:=TIIB[MR1L1-EL1004-E13]^Channel 2^Input;
+                                  .fbRunHOMS.stYupEnc.Count:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Position;
+                                  .fbRunHOMS.stYdwnEnc.Count:=TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 2^Position;
+                                  .fbRunHOMS.stXupEnc.Count:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 1^Position;
+                                  .fbRunHOMS.stXdwnEnc.Count:=TIIB[MR1L1-EL5042-E07]^FB Inputs Channel 2^Position'}
+        {attribute 'pytmc' := '
+            pv: MR1L1:HOMS
+        '}
+        MR1L1 : DUT_HOMS;
+        // MR1L1 Y Encoder for PMPS Veto Device
+        ///////////////////////////////////////
+        {attribute 'TcLinkTo' := 'TIIB[PMPS_PRE]^IO Outputs^MR1L1_Y_ENC'}
+        nMR1L1_Y_ENC_PMPS AT %Q* : ULINT;
+        {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^Ready'}
+        bMR1L1_Y_ENC_Ready AT %I* : BOOL;
+        {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL5042-E06]^FB Inputs Channel 1^Status^TxPDO State'}
+        bMR1L1_Y_ENC_TxPDO AT %I* : BOOL;
+        {attribute 'TcLinkTo' := 'TIIB[MR1L1-EL2004-E14]^Channel 1^Output'}
+         {attribute 'pytmc' := '
+            pv: MR1L1:HOMS:VCV
+            io: io
+            field: ZNAM OFF
+            field: ONAM ON
+        '}
+        bActivateVarCool AT %Q* : BOOL;
+            // MR1L1 Flow Sensors
+        {attribute 'TcLinkTo' := '.fbFlow_1.iRaw := TIIB[MR1L1-EL3054-E10]^AI Standard Channel 1^Value;
+                                  .fbFlow_2.iRaw := TIIB[MR1L1-EL3054-E10]^AI Standard Channel 2^Value;
+                                  .fbPress_1.iRaw := TIIB[MR1L1-EL3054-E10]^AI Standard Channel 3^Value
+        '}
+        {attribute 'pytmc' := '
+            pv: MR1L1:HOMS
+        '}
+        fbCoolingPanel : FB_Axilon_Cooling_2f1p;
+
+
+
+    END_VAR
+    // MR1L3 BECKHOFF
+    MR1L1.fbRunHOMS(stYup:=Main.M1,
+                   stYdwn:=Main.M2,
+                   stXup:=Main.M3,
+                   stXdwn:=Main.M4,
+                   stPitch:=Main.M5,
+                   nYupEncRef:=GVL_MR1L1_Constants.nYUP_ENC_REF,
+                   nYdwnEncRef:=GVL_MR1L1_Constants.nYDWN_ENC_REF,
+                   nXupEncRef:=GVL_MR1L1_Constants.nXUP_ENC_REF,
+                   nXdwnEncRef:=GVL_MR1L1_Constants.nXDWN_ENC_REF,
+                   bExecuteCoupleY:=MR1L1.bExecuteCoupleY,
+                   bExecuteCoupleX:=MR1L1.bExecuteCoupleX,
+                   bExecuteDecoupleY:=MR1L1.bExecuteDecoupleY,
+                   bExecuteDecoupleX:=MR1L1.bExecuteDecoupleX,
+                   bGantryAlreadyCoupledY=>MR1L1.bGantryAlreadyCoupledY,
+                   bGantryAlreadyCoupledX=>MR1L1.bGantryAlreadyCoupledX,
+                   nCurrGantryY=>MR1L1.nCurrGantryY,
+                   nCurrGantryX=>MR1L1.nCurrGantryX);
+    // No slave motion through Epics
+    Main.M2.bExecute := FALSE; // MR1L1-Ydwn
+    Main.M4.bExecute := FALSE; // MR1L1-Xdwn
+
+    fbMotionStage_m1(stMotionStage:=Main.M1);
+    fbMotionStage_m2(stMotionStage:=Main.M2);
+    fbMotionStage_m3(stMotionStage:=Main.M3);
+    fbMotionStage_m4(stMotionStage:=Main.M4);
+    fbMotionStage_m5(stMotionStage:=Main.M5);
+
+    nMR1L1_Y_ENC_PMPS := Main.M1.nRawEncoderULINT;
+
+    fbCoolingPanel();
+
+    END_PROGRAM
+
+
+Related:
+    * `GVL_MR1L1_Constants`_
+    * `Main`_
+
