@@ -1,11 +1,11 @@
-#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.8.0/bin/rhel7-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R1.0.0/bin/rhel9-x86_64/adsIoc
 ################### AUTO-GENERATED DO NOT EDIT ###################
 #
 #         Project: lcls-plc-txi-hxr-optics.tsproj
 #        PLC name: txi_hxr_optics (txi_hxr_optics Instance)
-# Generated using: pytmc 2.17.0
-# Project version: 153c68b
-#    Project hash: 153c68bc19e703f0040547d0a4b9343d9d92ffcd
+# Generated using: pytmc 2.18.2
+# Project version: 5f5ef35
+#    Project hash: 5f5ef35c1f8ba69b666cbe750d4e9291b3e348db
 #     PLC IP/host: 172.21.136.43
 #      PLC Net ID: 172.21.136.43.1.1
 #  ** Production mode IOC **
@@ -21,11 +21,13 @@
 #   Tc3_Module: * -> 3.3.21.0 (Beckhoff Automation GmbH)
 #
 ################### AUTO-GENERATED DO NOT EDIT ###################
+# Run common startup commands for linux soft IOC's
+< $(IOC_COMMON)/All/pre_linux.cmd
 < envPaths
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
-epicsEnvSet("ENGINEER", "nrw" )
+epicsEnvSet("ENGINEER", "zlentz" )
 epicsEnvSet("LOCATION", "PLC:TXI:HXR:OPTICS" )
 epicsEnvSet("IOCSH_PS1", "$(IOC)> " )
 epicsEnvSet("ACF_FILE", "$(ADS_IOC_TOP)/iocBoot/templates/unrestricted.acf")
@@ -48,7 +50,7 @@ epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
 epicsEnvSet("ADS_TIME_SOURCE",  "0")
 
 # Add a route to the PLC automatically:
-system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.136.43 ^172.*")
+system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.136.43 ^172.*$")
 
 # adsAsynPortDriverConfigure(portName, ipaddr, amsaddr, amsport,
 #    asynParamTableSize, priority, noAutoConnect, defaultSampleTimeMS,
@@ -195,7 +197,7 @@ dbLoadRecords("caPutLog.db", "IOC=$(IOC)")
 dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:TXI:HXR:OPTICS,IDX=1,TASK_PORT=350")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:TXI:HXR:OPTICS")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:TXI:HXR:OPTICS,PROJECT=lcls-plc-txi-hxr-optics.tsproj,HASH=153c68b,VERSION=153c68b,PYTMC=2.17.0,PLC_HOST=172.21.136.43")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:TXI:HXR:OPTICS,PROJECT=lcls-plc-txi-hxr-optics.tsproj,HASH=5f5ef35,VERSION=5f5ef35,PYTMC=2.18.2,PLC_HOST=172.21.136.43")
 
 #   lcls-twincat-motion: * -> 4.0.6 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:HXR:OPTICS,DEPENDENCY=lcls-twincat-motion,VERSION=4.0.6,VENDOR=SLAC")
